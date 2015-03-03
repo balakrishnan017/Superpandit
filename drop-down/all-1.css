@@ -1,0 +1,97 @@
+/*
+ *  nmcDropDown example
+ *  Site by New Media Campaigns
+ */
+
+/* Eric Meyer's Reset styles */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{padding: 0;border: 0;outline: 0;font-size: 13px;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}:active{outline:0;}ins{text-decoration:none;}del{text-decoration:line-through;}
+
+
+/* Begin general styles */
+
+
+#wrapper {
+	width: 929px;
+	margin: 0;
+	}
+	
+
+/* End text */ 
+
+
+/* Begin header styles */
+
+
+#nav {
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+	float: left;
+	margin: 0px 0;
+	padding: 0 0px;
+	height: 55px;
+	border-radius: 0px;
+	width: 929px;
+	}
+#nav li {
+	float: left;
+	position: relative;
+	}
+#nav li.open, #nav li:hover {
+
+  color:#CCCCCC;
+  
+  }
+#nav li a {
+	display: block;
+	padding-top:0px;
+	padding-bottom:0px;
+	line-height: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	
+	
+	#nav li a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+
+	}
+#nav li ul {
+  display: none;
+  position: absolute;
+  left:-17px;
+  top:55px;
+  margin-left:0px;
+  width: 163px;
+  padding: 0 0 0px;
+  background:#e86837;
+  border:  dotted #5c91be;
+  border-width: 0 0px 0px;
+
+  }
+#nav li:hover ul {
+  display: block;
+  }
+#nav li ul li {
+border-left:1px dotted white;
+border-right:1px dotted white;
+border-bottom:1px dotted white;
+  float: none;
+  }
+#nav li ul li a {
+  padding: 9px 15px;
+  display: inline-block;
+  }
+#nav li ul li a {display: block;}
+#nav li ul li a:hover {
+  background: #f07849;
+  color: #FFFFFF;
+  }
+
+/* End header */
+
+
+
+
+	
+/* End body */

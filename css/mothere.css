@@ -1,0 +1,71 @@
+body {
+margin:0px;
+
+background-color: #2b2a28;
+
+font-family: Arial, Helvetica, sans-serif;
+
+font-size: 12px;}
+
+.bg-main{background:#FFFFFF;}
+
+.login-bg{float:left; width:400px; margin:25px; padding:30px; border:5px solid #ee2823; line-height:22px;"><strong style="font-size:12px;}
+
+.login-con{float:left; margin:0px; padding:0px; line-height:22px; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#333333;}
+
+.login-bg2{float:left; width:460px; margin:25px; padding:30px; border:5px solid #e6324b; line-height:22px;"><strong style="font-size:12px;}
+
+.T-F{width:230px; height:18px; outline:0; line-height:18px; padding:0 0 0 5px; font-size:12px;}
+
+.T-F-L{width:239px; height:22px; outline:0; line-height:22px; padding:1px; font-size:12px;}
+
+.T-F-B{width:200px; height:70px; outline:0; line-height:18px; padding:0 0 0 5px; font-size:12px; margin:5px 0 5px 0}
+
+.T-F-B2{width:232px; height:90px; outline:0; line-height:18px; padding:0 0 0 5px; font-size:12px; margin:5px 0 5px 0}
+
+.T-F-S{width:60px; height:23px; outline:0; line-height:23px; padding:0; font-size:12px; color:#FFFFFF; background:#f99d1f; cursor:pointer; border:0 none;}
+.T-F-S2{width:70px; height:25px; outline:0; line-height:25px; padding:0; font-size:12px; color:#FFFFFF; background:#565656; cursor:pointer; border:0 none;}
+
+h2{font-family:Arial, Helvetica, sans-serif; font-size:20px; padding:0 0 0 10px; margin:30px 0 10px 0; color:#252525; text-align:center; text-transform:capitalize;}
+
+h3{font-family:Arial, Helvetica, sans-serif; font-size:20px; padding:0 0 0 10px; margin:30px 0 -70px 0; color:#252525; text-align:center; text-transform:capitalize;}
+
+.table-h{background:#565656; font-size:14px; line-height:20px; padding:5px 10px; color:#fff; font-family:Arial, Helvetica, sans-serif;}
+.table-t{background:#F9F9F9; font-size:12px; line-height:20px; padding:5px 10px; font-family:Arial, Helvetica, sans-serif;}
+a{ font-size:12px; color:#333333; text-decoration:none;}
+a:hover{ font-size:12px; color:#333333; text-decoration:none;}
+.footter-bg{height:37px;
+width:931px;
+background-color:#565656;}
+
+.footer{font-size:12px;
+font-weight:normal;
+color:#FFFFFF;
+line-height:20px;
+padding-top:10px;
+padding-left:8px;
+font-family:Arial, Helvetica, sans-serif;}
+
+.footer a{
+color:#FFFFFF;
+line-height:20px;
+text-decoration:none;}
+
+.footer a:hover{
+color:#404040;
+line-height:20px;
+text-decoration:none;}
+
+.color-img{ margin:0 10px -5px 0px; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#333333;}
+.check-size1{ margin:0 10px 0px 0px; width:15px; height:auto; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#333333; float:left;}
+.check-conn{ margin:0 0 8px 0px; width:90px; height:auto; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#333333; float:left;}
+.check-bg{ margin:0 0 0px 0px; width:235px; height:auto; float:left;}
+.chekk-inn{ width:115px; height:auto; float:left;}
+
+.numbering{ float:right; width:20px; height:15px; padding:2px 0 0 0px; margin:0px 0px 0 10px; border:1px #e6324b solid; color:#000; text-decoration:none; text-align:center; font-size:12px;}
+.numbering:hover{ float:right; width:20px; height:15px; padding:2px 0 0 0px; margin:0px 0px 0 10px; border:1px #565656 solid; color:#000; text-decoration:none; text-align:center; font-size:12px;}
+
+.next-con{ font-size:14px; color:#000000; margin:0 0 0 12px; float:right; text-decoration:none;}
+
+.login-bg2{float:left; width:460px; margin:25px; padding:30px; border:5px solid #e6324b; line-height:22px;"><strong style="font-size:12px;}
+.check-size{ margin:0 0 -5px 4px;}

@@ -1,0 +1,170 @@
+/* CSS Document */
+/*
+# Project:Superpandit
+# Modified:20/December/2014 
+# Author:Cwebsite Designing
+# Company:Cwebsite Designing
+------------------------------------------------------------------------------------------------------------------[ Reset ]
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, 
+cite, code, del, def, em, img, ins, kbd, q, samp, small, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, th, td{
+margin:0; padding:0; border:0; outline:0;}
+
+
+/*---BODY-----------*/
+body{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:normal; color:#000; line-height:18px;}
+
+/*---------- PAGES -------------*/
+#main-wrap{width:100%; padding:0; margin:0 auto; vertical-align:text-top; height:auto;}
+#header{width:100%; margin:0 auto; height:auto; background: url(../images/header-bg.jpg) left top repeat; height:148px;}
+#header-top{width:986px; margin:0 auto; height:148px;}
+.logo{ width:217px; height:123px; margin:12px 0 0 0px;}
+.header-right{ width:393px; height:auto; margin:12px 0 0 0px;}
+.logon-bg{ width:180px; height:auto; margin:10px 0 0 0px;}
+.social-img{ margin-left:3px;}
+.contact-icon{ width:156px; height:32px; background:url(../images/contact-icon.png) left top no-repeat; color:#FFFFFF; padding:15px 0 0 45px; font-size:1em; text-align:center;}
+.nav{ width:746px; height:auto; margin:10px 0 0 0px;}
+.banner{ width:100%; height:378px; margin:0 auto;}
+.main-body-content{ width:986px; height:auto; margin:0 auto;}
+.search-bg123{ width:986px; height: auto; margin:0 auto;}
+.search-bg{ width:100%; height:57px; background:#ee2823; border-radius:2px; margin:45px 0 35px 0px;}
+.search-bg1{ width:100%; height: auto; border-radius:0px; position:relative; left:0px; top:-26px;}
+/*.listmenu-bg{ width:212px; height:28px; margin:15px 0 0 20px; border:1px #b4120d solid;}
+.listmenu-main{ width:100%; height:28px;}*/
+<!--.search-inner-bg{ width:64px; height:29px; margin:15px 0 0 10px;}
+.search-butt{ width:64px; height:29px; background:#f7ae4a; color:#000; text-align:center; padding:5px 0 5px 0px; font-size:12px; text-decoration:none; border-radius:2px; margin:-10px 0 0 0px; border:none;}-->
+.now-we{ width:380px; height:40px; font-size:16px; background:url(../images/login-line.jpg) left top no-repeat; padding:12px 0 0 32px; margin:8px 0 0 0px; color:#FFFFFF;}
+.easy-bg{ width:290px; height:137px; border:2px #cfcfcf solid; margin:0 0 0 0px; color:#333333; padding:0 0 0 18px; line-height:20px;}
+.easy-img{ margin:0 0 0 0px; float:right;}
+.diagram-bg{ width:964px; height:auto; border:2px #cfcfcf solid; padding:14px 0 14px 20px; margin:35px 0 35px 0px;}
+.diagram{ width:520px; height:auto; line-height:22px; color:#585757; text-align:justify;}
+.youtube-video{ width:388px; height:auto; margin:0 0 0 34px;}
+.blog-bg{ width:98%; height:auto; border:2px #cfcfcf solid; padding:0 0 0 20px; margin:0 0 35px 0px;}
+.blog-con-bg{ width:294px; height:auto; color:#585757; line-height:18px;}
+.blog-img{ float:left; margin:0 16px 13px 0px;}
+.blog-underline{ width:6px; height:auto; margin:0 20px 0 20px;}
+.testimonial-img{ float:right; margin:0 0px 13px 12px;}
+.current-new-bg{ width:260px; height:auto; color:#585757;}
+.twitt-bg{ width:260px; height:200px; color:#585757; margin:20px 0 0 0px;}
+.news-underline{ width:260px; height:1px; margin:0px 0px 13px 0px; border-bottom:1px #cfcfcf solid;}
+
+.footer-main-bg{ width:100%; height:auto; margin: 0 auto;}
+.footer-bg{ width:100%; height:236px; background:url(../images/footer-bg.jpg) left top repeat; border-bottom:2px #cfcfcf solid; border-top:2px #cfcfcf solid;}
+.footer-inner-main{ width:986px; height:auto; margin:0 auto;}
+.footer-inner{ width:190px; height:auto; margin:0 28px 0 28px;}
+.footer-li{line-height:28px; margin:1px 50px 2px -0px; padding:0px 0 8px 0px; list-style:none; color:#585757; height:23px; text-decoration:none; font-weight:normal; width:190px; border-top:1px #bcbcbc solid;}
+.footer-li a{ color:#585757; text-decoration:none;}
+.footer-li a:hover{ color:#ee2823; text-decoration:none;}
+
+.socialmedia-bg{ width:230px; height:auto; margin:0 0 0 15px;}
+.soc-img{ margin:0 13px 0 0px;}
+.person{color:#000000; position:relative; left:10px; top:-13px;}
+.copyright-bg{ width:986px; height:auto; margin:0 auto;}
+.copy{ width:335px; height:auto; margin:20px 0 20px 0px;}
+
+/*---inner-page-----------*/
+.pandith-profile-bg{ width:369px; height:369px; border:1px #CCCCCC solid; margin:0 30px 0 0px;}
+.pandith-img{  width: 342px; height: 343px; overflow: hidden; margin:14px;}
+.pandith-img img{  width: 100%; height:100%;}
+
+
+.pandit-pro-con{ width:552px; height:auto; border:1px #CCCCCC solid; padding:14px;}
+.date-of-birth{ width:100%; height:auto; font-size:13px; color:#000000; border-bottom:1px #cccccc solid; padding:0 0 10px 0px; margin:0 0 7px 0px; line-height:22px;}
+.pandit-social{ margin:5px 5px 0 0px;}
+.boomi-pooja-bg{ width:550px; height:auto; border:1px #CCCCCC solid; padding:14px;}
+
+.book-pandit{ width:120px; height:24px; background:#f99d1f; color:#FFFFFF; text-align:center; padding:7px 0 0 0px; font-size:12px; text-decoration:none; border-radius:2px; margin:12px 0 0 0px;}
+.book-pandit a{ color:#FFFFFF; text-decoration:none;}
+.book-pandit a:hover{ color:#ee2823; text-decoration:none;}
+
+.book-pan-bg{ width:550px; height:auto; border:1px #CCCCCC solid; padding:14px; margin:0 auto;}
+.book-field-bg{ width:100%; height: auto;}
+.book-field{ width:100%; height:30px;}
+
+.btn{ margin:0 7px 0 0px; padding:3px; width:80px; height:30px; border:none; outline:none; color:#fff; cursor:pointer; background:#f99d1f; border-radius:2px;}
+.btn:hover{ margin:0 7px 0 0px; padding:3px; width:80px; height:30px; outline:none; border:none; color:#fff; transition: color 1s; -webkit-transition: color 1s; background:#ee2823; border-radius:2px;  /* IE6-9 */
+-moz-transition: background 1s;
+-webkit-transition: background 1s;
+-o-transition: background 1s;
+-ms-transition: background 1s;
+transition: background 1s;}
+.contact-map{ width:550px; height: auto; margin:20px 0 0 0px;}
+.blog-image{ margin:0 30px 0 0px; float:left;}
+.blog-under{ width:100%; height:1px; border-bottom:1px #CCCCCC solid; margin:20px 0 20px 0px;}
+.b-m-c{ width:100%; height:auto;}
+
+
+.ganesh-bg{ width:220px; height:auto;  margin:0 16px 30px 10px;}
+.ganesh-idol-bg{ width: 202px; height: auto; padding:11px; border:1px #CCCCCC solid;}
+
+
+.ganesh-idol-main{ width: 202px; height: 193px; overflow: hidden;}
+.ganesh-idol-main img{ width: 100%; height:100%;}
+
+
+
+.ganesh-con{ margin:4px 0px 0 0px; padding:8px 0px 8px 0px; width:100%; height: 40px; border:none; outline:none; color:#fff; cursor:pointer; background:#313036; text-align:center; font-size:14px; line-height:20px; text-transform:capitalize;}
+.ganesh-con:hover{ margin:4px 0px 0 0px; padding:8px 0px 8px 0px; width:100%; height: 40px; outline:none; border:none; color:#fff; transition: color 1s; -webkit-transition: color 1s; background:#f99d1f; font-size:14px; line-height:20px; text-transform:capitalize;  /* IE6-9 */
+-moz-transition: background 1s;
+-webkit-transition: background 1s;
+-o-transition: background 1s;
+-ms-transition: background 1s;
+transition: background 1s;}
+
+.pro-div-bo{ float:left; margin:0px 20px 0 0; width:164px; text-align:left;}
+.pro-div-bo ul{ margin:10px 0 0 20px; font-size:13px;}
+.pro-div-bo ul li{ list-style:outside; line-height:23px;}
+
+.super ul {}
+.super li{ width:170px; margin:0 0 0 0px; color:#333333; padding:0 0 0 0px; line-height:25px; text-decoration:none; list-style: inside;}
+.super li a{color:#333333; text-decoration:none;}
+.super li a:hover{color:#333333; text-decoration:none;}
+
+.know{ font-size:14px; font-weight:normal; color:#ee2823; text-decoration:none; margin:10px 0 15px 0px; float:left;}
+.know a{color:#ee2823; text-decoration:none;}
+.know a:hover{color:#333333; text-decoration:none;}
+.blo-bg{ width:100%; height:auto; margin:0 0 15px 0px; line-height:18px;}
+
+.search-prof{ width:944px; height:auto; border:1px #CCCCCC solid; margin:0 auto; padding:10px 10px 0 10px;}
+.search-prof-main{ width:944px; height:auto; border-bottom:1px #CCCCCC solid; margin:0 auto;}
+.search-prof-inn{ width:472px; height:auto; float:left;}
+.search-prof-img{ float:left; margin:0 15px 0 0px; border:1px #CCCCCC solid; }
+.search-prof-con{ font-size:18px; color:#f99d1f; line-height:20px; text-transform:capitalize; margin:10px 0 10px 0px;}
+.search-prof-con1{ font-size:14px; color:#6f6f6f; line-height:20px; font-weight:bold;}
+.search-prof-con2{ font-size:13px; color:#6f6f6f; line-height:20px;}
+.search-prof-con3{ font-size:13px; color:#6f6f6f; line-height:20px; text-align:right;}
+
+/*---FLOT-----------*/
+.fL{float:left;}
+.fR{float:right;}
+.cB{clear:both;}
+.cB1{clear:both; height:35px;}
+.cB2{clear:both; height:20px;}
+.cB3{clear:both; height:9px;}
+
+/*---margins----------*/
+.easy-mr{ margin:0 25px 0 25px;}
+.blog-mr{ margin:15px 0px 5px 0px;}
+
+/*---tags----------*/
+.br-right{ border-right:1px #CCCCCC solid;}
+.br-bottom{ border-bottom:1px #CCCCCC solid;}
+.form-width{ width:100%; height:32px; border:none;}
+.form-height{ margin-bottom:25px;}
+.con-form-width{ width:100%; height:32px; border:1px #CCCCCC solid;}
+
+/*---P----------*/
+p{text-align:justify; margin-bottom:10px; line-height:20px;}
+.p1{ margin-bottom:12px; line-height:18px;}
+
+/*---- Headings-----*/
+h1{font-size:18px; font-weight:normal; text-transform: capitalize; color:#010101; letter-spacing:-0.05em; margin:12px 0 12px 0px;}
+h2{font-size:16px; font-weight: normal; text-transform: uppercase; color:#ee2823; letter-spacing:-0.05em; margin:20px 0 12px 0px; font-style:normal;}
+h3{font-size:16px; font-weight: normal; text-transform: uppercase; color:#ee2823; letter-spacing:-0.05em; margin:20px 0 12px 0px;}
+h4{font-size:16px; font-weight: normal; text-transform: uppercase; color:#ee2823; letter-spacing:-0.05em; margin:15px 0 17px 0px;}
+h5{font-size:16px; font-weight: normal; text-transform: uppercase; color:#ee2823; letter-spacing:-0.05em; margin:15px 0 17px 0px; border-bottom:1px #CCCCCC solid; padding:0 0 15px 0px;}
+h6{font-size:16px; font-weight: normal; text-transform: uppercase; color:#ee2823; letter-spacing:-0.05em;}
+
+/*---Links----------*/
+a{ color:#333333; text-decoration:none; }
+a:hover{ color:#ee2823; text-decoration:none; }

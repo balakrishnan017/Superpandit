@@ -1,0 +1,269 @@
+.bg-main{background-color:#FFFFFF;
+background-repeat:repeat;}
+
+
+
+.logo-position{padding-bottom:10px;}
+
+
+.h1{
+	font-size:22px;
+	font-weight:normal;
+	color:#1d4b7e;
+	padding-left: 7px;
+	padding-top: 15px;
+}
+
+
+.h2{
+	font-size:18px;
+	font-weight:normal;
+	color:#1d4b7e;
+	padding-left: 7px;
+	padding-top: 12px;
+}
+
+.h3{
+	font-size:14px;
+	font-weight:normal;
+	color:#1d4b7e;
+	padding-left: 7px;
+	padding-top: 15px;
+}
+
+.content{
+	font-size:12px;
+	padding-left:7px;
+	padding-top:10px;
+	line-height:20px;
+	color:#222222;
+	text-align: justify;
+	padding-right: 10px;}
+	
+	
+.content-inner{
+	font-size:12px;
+	padding-left:7px;
+	padding-top:10px;
+	line-height:20px;
+	color:#222222;
+	text-align: justify;
+	padding-right: 15px;}
+	
+.content-inner a{color:#268CC5;
+text-decoration: underline;}
+
+.content-inner a:hover{color:#815E48;
+text-decoration:none;}
+	
+.no{
+	font-size:12px;
+	padding-left:7px;
+	padding-top:10px;
+	line-height:20px;
+	color:#222222;
+	text-align: justify;}
+	
+	
+.financial-pdf{
+	background-image:url(../images/icon-pdf.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:14px;
+	padding-left:45px;
+	padding-top:10px;
+	line-height:30px;
+	color:#268cc5;
+	text-align: justify;
+	padding-right: 15px;
+	font-weight:normal;
+}
+
+
+.financial-pdf a{
+	color:#268cc5;
+	text-decoration: underline;
+}
+
+.financial-pdf a:hover{
+	color:#815e48;
+	text-decoration:none;
+}
+	
+	
+.knowmore{font-size:12px;
+font-weight:bold;
+line-height:20px;
+color:#000000;
+padding-right:10px;}
+
+
+.knowmore a{
+color:#268CC5;
+text-decoration:none;}
+
+
+.knowmore a:hover{
+color:#815e48;
+text-decoration:none;}
+
+
+.bg-current-news{background-image:url(../images/bg-current-news.png);
+background-position:left top;
+background-repeat:repeat-y;
+height:145px;}
+
+.bg-about{background-image:url(../images/bg-current-news.png);
+background-position:left top;
+background-repeat:repeat-y;}
+
+
+
+.point{
+	background-image:url(../images/point1.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-left:48px;
+	font-size:13px;
+	font-weight:normal;
+	color:#004080;
+	padding-top: 10px;
+	padding-right:10px;}
+	
+
+.point a{
+	color:#004080;
+	text-decoration: underline;}
+	
+.point a:hover{
+	color:#A67A60;
+	text-decoration:none;}
+	
+	
+	
+.point-about{
+	background-image:url(../images/point1.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-left:48px;
+	font-size:13px;
+	font-weight:bold;
+	color:#222222;
+	padding-top: 10px;}
+	
+	
+.point-about a{
+	font-weight:bold;
+	color:#222222;
+	text-decoration:none;}
+	
+.point-about a:hover{
+	font-weight:bold;
+	color:#004080;
+	text-decoration:none;}
+	
+	
+	
+.point-about-hover{
+	background-image:url(../images/point1.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-left:48px;
+	font-size:13px;
+	font-weight:bold;
+	color:#004080;
+	padding-top: 10px;}
+	
+	
+.point-about-hover a{
+	font-weight:bold;
+	color:#004080;
+	text-decoration:none;}
+	
+.point-about-hover a:hover{
+	font-weight:bold;
+	color:#004080;
+	text-decoration:none;}
+	
+	
+	
+
+.sitemap{
+	font-size:12px;
+	padding-left:7px;
+	padding-top:10px;
+	line-height:20px;
+	color:#222222;
+	text-align: justify;
+	padding-right: 15px;
+	font-weight:normal;}
+	
+.sitemap a{
+	color:#268CC5;
+	text-decoration:none;}
+	
+.sitemap a:hover{
+	color:#815e48;
+	text-decoration:none;}
+	
+	
+	
+.sitemap2{
+	font-size:12px;
+	padding-left:20px;
+	padding-top:5px;
+	line-height:20px;
+	color:#222222;
+	text-align: justify;
+	padding-right: 15px;}
+	
+.sitemap2 a{
+	color:#815e48;
+	text-decoration:none;}
+	
+.sitemap2 a:hover{
+	color:#268CC5;
+	text-decoration:none;}
+
+
+	
+	
+.footter-bg{height:37px;
+width:931px;
+background-color:#268cc5;}
+
+
+.footer{font-size:12px;
+font-weight:normal;
+color:#FFFFFF;
+line-height:20px;
+padding-top:10px;
+padding-left:8px;}
+
+
+.footer a{
+color:#FFFFFF;
+line-height:20px;
+text-decoration:none;}
+
+.footer a:hover{
+color:#404040;
+line-height:20px;
+text-decoration:none;}
+
+
+.copyright{font-size:12px;
+font-weight:normal;
+color:#222222;
+line-height:20px;
+padding-top:10px;
+padding-left:8px;}
+
+.address{font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#222222;
+line-height:20px;
+padding-left:10px;
+}
+
+.current-new-h{height:35px; width:222px; padding:0 10px 0 30px; line-height:35px; font-size:20px; color:#FFFFFF; background:#268cc5;}

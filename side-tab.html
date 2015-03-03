@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tabslet jQuery plugin | Yet another plugin for tabs</title>
+		<meta name="description" content="Yet another jQuery plugin for tabs, lightweight, easy-to-use and with some extra features">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!-- MODERNIZR -->
+		<script type="text/javascript" src="tabs/javascripts/vendor/modernizr.custom.js"></script>
+		<script type="text/javascript">
+			
+			/* Function Call to load Pooja according to the location */
+			function loadPooja(city)
+			{
+				if (city.length == 0) { 
+					//document.getElementById("PoojaSelect").innerHTML = "";
+					return;
+					} else {
+					var xmlhttp = new XMLHttpRequest();
+					xmlhttp.onreadystatechange = function() {
+						if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+							document.getElementById("PoojaSelect").innerHTML = xmlhttp.responseText;
+						}
+					}
+					xmlhttp.open("GET", "poojacombo.php?city_name=" + city, true);
+					xmlhttp.send();
+				}
+			}
+			
+			/* Function Call to load Temple according to the location */
+			function loadTemple(city)
+			{
+				if (city.length == 0) { 
+					//document.getElementById("PoojaSelect").innerHTML = "";
+					return;
+					} else {
+					var xmlhttp = new XMLHttpRequest();
+					xmlhttp.onreadystatechange = function() {
+						if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+							document.getElementById("TempleSelect").innerHTML = xmlhttp.responseText;
+						}
+					}
+					xmlhttp.open("GET", "templecombo.php?city_name=" + city, true);
+					xmlhttp.send();
+				}
+			}
+		</script>
+		<!-- STYLES -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="tabs/stylesheets/reset.css">
+		<link rel="stylesheet" type="text/css" href="tabs/stylesheets/typography.css">
+		<link rel="stylesheet" type="text/css" href="tabs/stylesheets/styles.css">
+		<link rel="stylesheet" type="text/css" href="tabs/stylesheets/github.css">
+		
+		<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Tabslet jQuery plugin" />
+		<meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+		<meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://vdw.github.io/Tabslet/images/tabslet_logo_single_color_150.png" />
+		<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://vdw.github.io/Tabslet/" />
+	</head>
+	
+	<!-- MAIN CONTAINER -->
+	<div id="body_wrapper">
+		<?php
+		require_once("admin/functions/dbcon.php");  ?>
+		<!-- CONTENT -->
+		<section>
+			<!-- CONTENT BLOCK -->
+			<article>
+				<div class='tabs tabs_default'>
+					<ul class='horizontal'>
+						<li><a href="#tab-1">Pooja</a></li>
+						<li><a href="#tab-2">Temple</a></li>
+						<li><a href="#tab-3">Pandit</a></li>
+						<li><a href="#tab-4">Astrologer</a></li>
+					</ul>
+					
+					<!-- Tab Pooja  -->
+					
+					<div id='tab-1'>
+						<form id="SearchPoojaForm" name="SearchPoojaForm" method="get" action="pooja_page.php">
+						<div class="listmenu-bg">
+							<select name="city_select" id="city_select" class="listmenu-main" onChange="loadPooja(this.value);">
+								<!-- City Loaded --> 
+								<?php           
+									$sql_header="select l_city, l_id from tbl_location";
+								$result_header=mysql_query($sql_header); ?>
+								<option value="" Selected>Select City</option>
+								<?php
+									while($data_header=mysql_fetch_array($result_header)){ ?>
+									<option value="<?php echo $data_header['l_city']; ?>"><?php echo $data_header['l_city']; ?></option>   
+								<?php } ?>                 
+							</select>
+							</div>
+						<div class="listmenu-bg">
+							<div id="PoojaSelect">
+								<select name="p_id" class="listmenu-main">					
+									<option value="" Selected>Select Pooja</option>   
+								</select>
+							</div>
+						</div>	
+						<div class="search-inner-bg">
+							<input type="submit" class="search-butt" value="Search">
+						</div> 
+					</form>
+					</div>	
+					
+					
+					<!-- Tab Temple  -->
+					<div id='tab-2'>
+						<form id="SearchTempleForm" name="SearchTempleForm" method="get" action="temple_page.php">
+							<div class="listmenu-bg">
+								<select name="location_select" id="location_select" class="listmenu-main" onChange="loadTemple(this.value);">
+									<?php           
+										$sql_header="select l_city, l_id from tbl_location";
+									$result_header=mysql_query($sql_header); ?>
+									<option value="" Selected>Select City</option>
+									<?php 
+										while($data_header=mysql_fetch_array($result_header)){ ?>
+										<option value="<?php echo $data_header['l_city']; ?>"><?php echo $data_header['l_city']; ?></option>   
+									<?php } ?>
+								</select>
+							</div>
+							<div class="listmenu-bg">
+								<div id="TempleSelect">
+									<select name="t_id" id="t_id" class="listmenu-main">
+										<option value="" Selected>Select Temple</option>
+									</select>
+								</div>
+							</div>	
+							<div class="search-inner-bg">
+								<input type="submit" class="search-butt" value="Search">
+							</div>	
+						</form>					
+					</div>
+					
+					<!-- Tab Pandit  -->
+					<div id='tab-3'>
+						<form id="SearchPanditForm" name="SearchPanditForm" method="get" action="purohit.php">
+							<div class="listmenu-bg123">	
+								<select name="p_id" class="listmenu-main">
+									<?php           
+										$sql_header="select tbp.p_id, tbp.p_name FROM tbl_pandit tbp WHERE tbp.p_id in (SELECT DISTINCT pd_id FROM tbl_pandit_pooja)";
+										$result_header=mysql_query($sql_header); 
+										while($data_header=mysql_fetch_array($result_header)){ ?>
+										<option value="<?php echo $data_header['p_id']; ?>"><?php echo $data_header['p_name']; ?></option>   
+									<?php } ?> 
+								</select>
+							</div>	
+							<div class="search-inner-bg">
+								<input type="submit" class="search-butt" value="Search">
+							</div>			
+						</form>
+					</div>
+					
+					
+					<!-- Tab Astrologer  -->
+					<div id='tab-4'>
+						<form id="SearchPanditForm" name="SearchPanditForm" method="get" action="purohit.php">
+							<div class="listmenu-bg123">	
+								<select name="p_id" class="listmenu-main">
+									<?php           
+										$sql_header="SELECT tbp.p_id, tbp.p_name
+										FROM tbl_pandit tbp WHERE tbp.isAstrologer like 'checked'";
+										$result_header=mysql_query($sql_header); 
+										while($data_header=mysql_fetch_array($result_header)){ ?>
+										<option value="<?php echo $data_header['p_id']; ?>"><?php echo $data_header['p_name']; ?></option>   
+									<?php } ?> 
+								</select>
+							</div>	
+							<div class="search-inner-bg">
+								<input type="submit" class="search-butt" value="Search">
+							</div>			
+						</form>
+					</div>
+				</div>
+				
+			</article>
+			<!-- CONTENT BLOCK ends -->
+			<!-- CONTENT BLOCK -->
+		</section>
+	</div>
+	<!-- MAIN CONTAINER ends -->
+	<!-- FOOTER -->
+</div>
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="tabs/javascripts/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+<!-- JS -->
+<script type="text/javascript" src="tabs/javascripts/vendor/waypoints.min.js"></script>
+<script type="text/javascript" src="tabs/javascripts/vendor/waypoints-sticky.min.js"></script>
+<script type="text/javascript" src="tabs/javascripts/vendor/jquery.tabslet.min.js"></script>
+<script type="text/javascript" src="tabs/javascripts/vendor/rainbow-custom.min.js"></script>
+<script type="text/javascript" src="tabs/javascripts/vendor/jquery.anchor.js"></script>
+<script src="tabs/javascripts/initializers.js"></script>
+<!-- JS ends -->
+

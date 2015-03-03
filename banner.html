@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="charset=utf-8">
+	<title>FlexSlider Demo</title>
+	
+	<!-- FlexSlider pieces -->
+	<link rel="stylesheet" href="banner-files/flexslider.css" type="text/css" media="screen" />
+	<script src="banner-files/jquery.min.js"></script>
+	<script src="banner-files/jquery.flexslider-min.js"></script>
+	
+	<!-- Includes for this demo -->
+	<link rel="stylesheet" href="banner-files/demo-stuff/demo.css" type="text/css" media="screen" />
+	
+	<!-- Hook up the FlexSlider--> 
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider();
+		});
+	</script>
+</head>
+<body>
+
+
+		
+  <!--=============================
+		Markup for FADE animation
+		=================================-->
+  <div class="flexslider" >
+    <ul class="slides">
+<!--    	<li style="background:url(banner-files/demo-stuff/banner.jpg) center top no-repeat; height:551px; margin:0; padding:0;">&nbsp;</li>
+        <li style="background:url(banner-files/demo-stuff/banner2.jpg) center top no-repeat; height:551px; margin:0; padding:0;">&nbsp;</li>
+    	<li style="background:url(banner-files/demo-stuff/banner3.jpg) center top no-repeat; height:551px; margin:0; padding:0;">&nbsp;</li>
+    	<li style="background:url(banner-files/demo-stuff/banner4.jpg) center top no-repeat; height:551px; margin:0; padding:0;">&nbsp;</li>-->
+        
+        
+      <li><img src="banner-files/demo-stuff/sp-banner1.jpg" alt="banner1" width="1412" height="378"></li>
+      <li><img src="banner-files/demo-stuff/sp2.jpg" alt="banner1" width="1412" height="378"></li>
+      <li><img src="banner-files/demo-stuff/sp3.jpg" alt="banner1" width="1412" height="378"></li>
+      <li><img src="banner-files/demo-stuff/sp4.jpg" alt="banner1" width="1412" height="378"></li>
+                                   
+    </ul>
+  </div>
+  <!--============================
+		Markup for SLIDE animation
+		You need to add an extra container element for the overflow: hidden property on the slider
+		
+		Update your flexslider() function with the following properties:
+		
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+				  animation: "slide",
+				  controlsContainer: ".flex-container"
+			  });
+			});
+		</script>
+		=================================
+		<div class="flex-container">
+			<div class="flexslider">
+		    <ul class="slides">
+		    	<li>
+		    		<img src="demo-stuff/inacup_samoa.jpg" />
+		    		<p class="flex-caption">Captions and cupcakes. Winning combination.</p>
+		    	</li>
+		    	<li>
+		    		<a href="#"><img src="demo-stuff/inacup_pumpkin.jpg" /></a>
+		    		<p class="flex-caption">This image is wrapped in a link!</p>
+		    	</li>
+		    	<li>
+		    		<img src="demo-stuff/inacup_donut.jpg" />
+		    	</li>
+		    	<li>
+		    		<img src="demo-stuff/inacup_vanilla.jpg" />
+		    	</li>
+		    </ul>
+		  </div>
+	 	</div>
+		==================================-->
+</body>
+</html>

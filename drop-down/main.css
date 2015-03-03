@@ -1,0 +1,117 @@
+/* CSS Document */
+
+body{
+	margin:0px;
+	padding:0px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#898989;
+	position: relative;
+}
+
+#main{ width:1003px;margin:auto;
+}
+
+#top{
+	background-image:url(../images/header-bg.jpg);
+	width:1003px;
+	background-repeat:repeat-y;
+	height:122px;
+	position:absolute;
+}
+.FR{float:right;}
+.FL{float:left;}
+.clear{clear:all;}
+
+#logo{
+	background-image:url(../images/logo.jpg);
+	width:291px;
+	height:99px;
+	background-repeat:no-repeat;
+	position: relative;
+	display:block;
+	margin-left:31px;
+	margin-top:23px
+	}
+#search{
+margin-right:38px; margin-top:23px;
+}
+#search input{ 
+background-image:url(../images/search-bg.gif);border:none; border:solid 1px #cecece; height:20px; background-repeat:repeat-x;  width:151px;
+font-size:12px; text-indent:5px;}
+
+
+.navi{width:574px; margin-right:19px; margin-top:29px; position:relative;
+background-image:url(../images/navi-mid.gif); background-repeat:repeat-x; height:45px;}
+
+.flash-bg{width:951px; height:463px; background-image:url(../images/flash-bg.jpg); background-repeat:no-repeat; margin:auto; position:relative; top:122px;
+}
+
+
+
+
+/*Srat*/
+
+ul{padding:0px;
+margin:0px;
+list-style:none;	
+}
+.urbangreymenu{
+	width: 213px;
+}
+h3{margin:0px;
+padding:0px;
+}
+
+.urbangreymenu .headerbar{
+font: bold 13px Verdana;
+color: white;
+text-align:left;
+background: #113f6f no-repeat 0px 0px; /*last 2 values are the x and y coordinates of bullet image*/
+
+margin-bottom: 0; /*bottom spacing between header and rest of content*/
+padding: 0; /*31px is left indentation of header text*/
+}
+
+.urbangreymenu .headerbar a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	background-color:url(../images/tab/blu.png) no-repeat top left;
+	height: 31px;
+	padding-left: 5px;
+	margin-top:3px;
+}
+
+.urbangreymenu ul{
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.urbangreymenu ul li{
+padding-bottom: 0px; /*bottom spacing between menu items*/
+}
+
+.urbangreymenu ul li a{
+font: normal 12px Arial;
+color: black;
+background: #E9E9E9;
+display: block;
+text-align:left;
+padding-left: 0px; /*link text is indented 8px*/
+text-decoration: none;
+}
+
+.urbangreymenu ul li a:visited{
+color: black;
+}
+
+.urbangreymenu ul li a:hover{ /*hover state CSS*/
+color: white;
+background: black;
+}
+
+.tabcontent{position:absolute; top:145px;}
+/* close */
